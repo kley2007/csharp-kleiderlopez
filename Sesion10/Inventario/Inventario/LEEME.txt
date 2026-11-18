@@ -1,0 +1,34 @@
+SESION 10 - INVENTARIO DE ESCRITORIO
+====================================
+
+Abrir:
+1. Extrae esta carpeta.
+2. Abre Inventario/Inventario.slnx con Visual Studio 2022 actualizado para .NET 10.
+3. En el Explorador de soluciones, clic derecho en Inventario.Escritorio y elige
+   "Establecer como proyecto de inicio".
+4. Compila la solución y ejecuta.
+
+FORMULARIOS VISUALES:
+- Inventario.Escritorio/FormPrincipal.cs [Diseño]
+- Inventario.Escritorio/FormProducto.cs [Diseño]
+- Inventario.Escritorio/FormReportes.cs [Diseño]
+- Inventario.Escritorio/FormCantidad.cs [Diseño]
+
+Cada formulario tiene su archivo .Designer.cs con los controles creados mediante
+el diseñador estándar de Windows Forms; no se construyen dinámicamente en tiempo
+de ejecución.
+
+FUNCIONES:
+- Buscar por código o nombre mientras se escribe.
+- Agregar productos con validación.
+- Editar producto con doble clic (el código queda bloqueado).
+- Vender y controlar stock insuficiente.
+- Agregar stock.
+- Eliminar con confirmación.
+- Valor total del inventario y resaltado de stock bajo.
+- Reporte de productos más valiosos y stock bajo.
+- Menú Archivo/Ayuda y barra de estado.
+
+NOTA:
+El proyecto usa .NET 10.0-windows y Windows Forms, por lo que debe abrirse
+y ejecutarse en Windows con el SDK correspondiente instalado.
