@@ -1,0 +1,4 @@
+[
+  { "Codigo": "p001", "Nombre": "Teclado", "Precio": 50000, "Stock": 8 },
+  { "Codigo": "p002", "Nombre": "monitor", "Precio": 20000, "Stock": 2 }
+]

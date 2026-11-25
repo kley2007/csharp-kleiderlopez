@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="inventario.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inventario.Modelos\Inventario.Modelos.csproj" />
+    <ProjectReference Include="..\Inventario.Datos\Inventario.Datos.csproj" />
+    <ProjectReference Include="..\Inventario.Servicios\Inventario.Servicios.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProducto.Designer.cs">
+      <DependentUpon>FormProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FormCantidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCantidad.Designer.cs">
+      <DependentUpon>FormCantidad.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
